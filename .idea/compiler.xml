@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Alibaba-Cloud-Member" />
+        <module name="Alibaba-Cloud-Member-Hxx" />
+        <module name="Alibaba-Cloud-Provder" />
+        <module name="Alibaba-Gateway-Api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Alibaba-Cloud-Gateway" target="1.8" />
+      <module name="Alibaba-Cloud-Gateway-Api" target="1.8" />
+      <module name="Alibaba-cloud-skywalking" target="1.8" />
+      <module name="Alibaba-Zipkin-Server" target="1.8" />
+      <module name="AlibabaCloudGateway" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Alibaba-Cloud-Gateway" options="-parameters" />
+      <module name="Alibaba-Cloud-Gateway-Api" options="-parameters" />
+      <module name="Alibaba-Cloud-Member" options="-parameters" />
+      <module name="Alibaba-Cloud-Member-Hxx" options="-parameters" />
+      <module name="Alibaba-Cloud-Provder" options="-parameters" />
+      <module name="Alibaba-Gateway-Api" options="-parameters" />
+      <module name="Alibaba-Zipkin-Server" options="-parameters" />
+      <module name="Alibaba-cloud-skywalking" options="-parameters" />
+      <module name="AlibabaCloudGateway" options="-parameters" />
+    </option>
+  </component>
+</project>

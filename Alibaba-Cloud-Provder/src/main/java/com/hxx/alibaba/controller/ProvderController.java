@@ -1,5 +1,7 @@
 package com.hxx.alibaba.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,10 +17,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/provder")
 public class ProvderController {
 
+    @Autowired
+    private Registration registration;
 
     @RequestMapping("/getName")
     public String getNameList(String name) {
-        System.out.println("生产者");
-        return name + "生产者";
+        System.out.println("生产者provder");
+        return name + "生产者provder";
+    }
+
+    @RequestMapping("/getIpAndPort")
+    public String getIpAndPort(){
+        return registration.getHost() + ":" + registration.getPort();
     }
 }

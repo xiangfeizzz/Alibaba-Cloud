@@ -1,7 +1,7 @@
-package com.bocs.obtm.bcm.repository.service;
+package com.hxx.alibaba.repository.service;
 
-import com.bocs.obtm.bcm.repository.entity.DataReceiveRecordEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.hxx.alibaba.repository.entity.DataReceiveRecordEntity;
 
 /**
  * <p>

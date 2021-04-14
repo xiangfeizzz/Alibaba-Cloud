@@ -1,7 +1,7 @@
-package com.bocs.obtm.bcm.repository.dao;
+package com.hxx.alibaba.repository.dao;
 
-import com.bocs.obtm.bcm.repository.entity.DataReceiveRecordEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.hxx.alibaba.repository.entity.DataReceiveRecordEntity;
 
 /**
  * <p>

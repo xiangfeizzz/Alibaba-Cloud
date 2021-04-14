@@ -1,11 +1,8 @@
-package com.bocs.obtm.bcm.repository.entity;
+package com.hxx.alibaba.repository.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.Version;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.time.LocalDateTime;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -30,7 +27,7 @@ public class DataReceiveRecordEntity implements Serializable {
     /**
      * id
      */
-    @TableId("ID")
+    @TableId(value = "id", type = IdType.ID_WORKER_STR)
     private String id;
 
     /**
@@ -61,7 +58,7 @@ public class DataReceiveRecordEntity implements Serializable {
      * 创建日期
      */
     @TableField(value = "CREATE_TIME", fill = FieldFill.INSERT)
-    private LocalDateTime createTime;
+    private String createTime;
 
 
 }

@@ -5,13 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-/**
- * 使用说明：生产者生产东西
- *
- * @author huangxiangxiang
- * @version 2.0.0
- * @createTime 2019年09月10日 13:22:00
- */
 
 @SpringBootApplication
 @EnableDiscoveryClient

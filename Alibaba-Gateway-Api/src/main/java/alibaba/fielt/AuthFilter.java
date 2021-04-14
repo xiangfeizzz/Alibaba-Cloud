@@ -15,13 +15,6 @@ import reactor.core.publisher.Mono;
 
 import java.util.Map;
 
-/**
- * 使用说明： 鉴权过滤器
- *
- * @author huangxiangxiang
- * @version 2.0.0
- * @createTime 2019年09月10日 15:55:00
- */
 
 @Component
 public class AuthFilter implements GlobalFilter, Ordered {

@@ -1,8 +1,10 @@
 package com.hxx.alibaba.controller;
 
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.fastjson.JSONObject;
 import com.hxx.alibaba.controller.fegin.MemberService;
 import com.hxx.alibaba.repository.entity.DataReceiveRecordEntity;
+import com.hxx.alibaba.service.ProviderService;
 import io.netty.handler.codec.json.JsonObjectDecoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,6 +12,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -30,9 +33,32 @@ public class MemberController {
     @Autowired
     MemberService memberService;
 
+    @Autowired
+    ProviderService providerService;
+
+
+
     @Value("${isNewBusi}")
     private Boolean isNewBusi;
 
+    int i=0;
+    @RequestMapping("/index")
+    public String index() {
+        i++;
+        if(i%2==0)  return "error";
+        return "index";
+    }
+
+    @RequestMapping("/list")
+    public String list() {
+        return "list";
+    }
+
+    @GetMapping("/hot")
+    @SentinelResource("hot")
+    public String hot(@RequestParam(value = "num1",required = false) Integer num1, @RequestParam(value = "num2",required = false) Integer num2) {
+        return num1+"-"+num2;
+    }
 
     /**
      * 获取注册中心配置
@@ -84,28 +110,6 @@ public class MemberController {
         return JSONObject.toJSONString(entityList) ;
        }
 
-    /**
-     * 新增
-     *
-     * @return
-     */
-    @GetMapping("/insert")
-    public DataReceiveRecordEntity insert() {
-        DataReceiveRecordEntity entity = new DataReceiveRecordEntity();
-        entity.setDataType("1");
-        entity.setDataRemark("测试");
-        entity.setTotalNum("1");
-        entity.setSuccNum("1");
-        entity.setCreateTime(LocalDateTime.now().toString());
-
-        //ribbon调用
-//        ResponseEntity<DataReceiveRecordEntity> entityReturn = restTemplate.postForEntity("http://alibaba-cloud-provder/provder/insert", entity, DataReceiveRecordEntity.class);
-//        return entityReturn.getBody();
-
-        //feign调用
-        entity= memberService.insert(entity);
-        return entity;
-    }
 
 
     /**
@@ -126,6 +130,29 @@ public class MemberController {
 
         //feign调用
         entity= memberService.update(map);
+        return entity;
+    }
+
+    /**
+     * 新增
+     *
+     * @return
+     */
+    @GetMapping("/insert")
+    public DataReceiveRecordEntity insert() {
+        DataReceiveRecordEntity entity = new DataReceiveRecordEntity();
+        entity.setDataType("1");
+        entity.setDataRemark("测试");
+        entity.setTotalNum("1");
+        entity.setSuccNum("1");
+        entity.setCreateTime(LocalDateTime.now().toString());
+
+        //ribbon调用
+//        ResponseEntity<DataReceiveRecordEntity> entityReturn = restTemplate.postForEntity("http://alibaba-cloud-provder/provder/insert", entity, DataReceiveRecordEntity.class);
+//        return entityReturn.getBody();
+
+        //feign调用
+        entity= memberService.insert(entity);
         return entity;
     }
 

@@ -3,12 +3,16 @@ package com.hxx.alibaba.controller;
 import com.hxx.alibaba.repository.dao.DataReceiveRecordDao;
 import com.hxx.alibaba.repository.service.IDataReceiveRecordService;
 import io.seata.spring.annotation.GlobalTransactional;
+import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/order")
@@ -28,6 +32,8 @@ public class OrderController {
 
     @Autowired
     private RestTemplate restTemplate;
+    @Autowired
+    private RocketMQTemplate rocketMQTemplate;
 
 
     @RequestMapping("/save")
@@ -45,5 +51,12 @@ public class OrderController {
         return "success";
     }
 
+    @RequestMapping("/testMq")
+    public String testMq(){
+        Map map=new HashMap<String,String>();
+        map.put("key","测试rocketMq");
+        this.rocketMQTemplate.convertAndSend("myTopic" ,map);
+        return "success";
+    }
 
 }

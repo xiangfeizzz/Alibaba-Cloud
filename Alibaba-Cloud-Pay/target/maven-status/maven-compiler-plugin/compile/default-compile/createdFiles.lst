@@ -1,3 +1,4 @@
+com\hxx\alibaba\controller\rocketMq\RocketMqService.class
 com\hxx\alibaba\PayApp.class
 com\hxx\alibaba\repository\entity\DataReceiveRecordEntity.class
 com\hxx\alibaba\controller\PayController.class

@@ -12,3 +12,6 @@ spring:
     alibaba:
       seata:
         tx-service-group: ${spring.application.name}
+
+rocketmq:
+  name-server: localhost:9876

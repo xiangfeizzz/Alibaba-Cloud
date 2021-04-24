@@ -1,7 +1,10 @@
+com\hxx\alibaba\rocketMqTest\Customer.class
+com\hxx\alibaba\rocketMqTest\Producer.class
 com\hxx\alibaba\controller\OrderController.class
-com\hxx\alibaba\repository\entity\DataReceiveRecordEntity.class
 com\hxx\alibaba\repository\dao\DataReceiveRecordDao.class
+com\hxx\alibaba\rocketMqTest\Customer$1.class
+com\hxx\alibaba\OrderApp.class
+com\hxx\alibaba\repository\entity\DataReceiveRecordEntity.class
 com\hxx\alibaba\config\WebConfig.class
 com\hxx\alibaba\repository\service\IDataReceiveRecordService.class
 com\hxx\alibaba\repository\service\impl\DataReceiveRecordServiceImpl.class
-com\hxx\alibaba\OrderApp.class

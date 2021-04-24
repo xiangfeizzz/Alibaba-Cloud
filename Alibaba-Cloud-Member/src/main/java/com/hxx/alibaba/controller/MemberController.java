@@ -8,6 +8,8 @@ import com.hxx.alibaba.service.ProviderService;
 import io.netty.handler.codec.json.JsonObjectDecoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,12 +31,12 @@ public class MemberController {
 
     @Autowired
     private RestTemplate restTemplate;
-
     @Autowired
     MemberService memberService;
-
     @Autowired
     ProviderService providerService;
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
 
 
@@ -156,5 +158,11 @@ public class MemberController {
         return entity;
     }
 
+
+    @GetMapping("/getServiceList")
+    public List<ServiceInstance> getServiceList() {
+        List<ServiceInstance> serviceInstanceList =  discoveryClient.getInstances("alibaba-cloud-provder");
+        return serviceInstanceList;
+    }
 
 }

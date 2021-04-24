@@ -1,0 +1,10 @@
+com\hxx\alibaba\service\ProviderService.class
+com\hxx\alibaba\controller\fegin\MemberService.class
+com\hxx\alibaba\controller\MemberController.class
+com\hxx\alibaba\repository\entity\DataReceiveRecordEntity.class
+com\hxx\alibaba\config\RequestOriginParserDefinition.class
+com\hxx\alibaba\config\WebConfig.class
+com\hxx\alibaba\MemberApp.class
+com\hxx\alibaba\test\Test.class
+com\hxx\alibaba\controller\fegin\SentinelExceptionHandler.class
+com\hxx\alibaba\config\SentinelConfiguration.class

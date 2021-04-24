@@ -1,0 +1,10 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 888Chinapnr123
+    url: jdbc:mysql://115.159.41.44:3306/seata?characterEncoding=utf-8

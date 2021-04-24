@@ -28,11 +28,13 @@ public class ProvderController {
 
     @RequestMapping("/getIpAndPort")
     public String getIpAndPort() {
+//        try{Thread.sleep(3000);}catch(Exception e){e.printStackTrace();}
         return registration.getHost() + ":" + registration.getPort();
     }
 
     @RequestMapping("/selectById")
     public DataReceiveRecordEntity selectById(String id) {
+//        try{Thread.sleep(3000);}catch(Exception e){e.printStackTrace();}
         DataReceiveRecordEntity dataReceiveRecordEntity = DataReceiveRecordDao.selectById(id);
         return dataReceiveRecordEntity;
     }

@@ -6,31 +6,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Alibaba-Cloud-Order" />
         <module name="Alibaba-Cloud-Member" />
+        <module name="Alibaba-Cloud-Pay" />
         <module name="Alibaba-Cloud-Member-Hxx" />
         <module name="Alibaba-Cloud-Provder" />
         <module name="Alibaba-Gateway-Api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Alibaba-Cloud-Gateway" target="1.8" />
-      <module name="Alibaba-Cloud-Gateway-Api" target="1.8" />
-      <module name="Alibaba-cloud-skywalking" target="1.8" />
-      <module name="Alibaba-Zipkin-Server" target="1.8" />
-      <module name="AlibabaCloudGateway" target="1.8" />
+      <module name="Alibaba-Cloud-Common" target="1.8" />
+      <module name="Alibaba-Cloud-Mapper" target="1.8" />
+      <module name="Alibaba-Gateway-Order" target="8" />
+      <module name="order" target="1.8" />
+      <module name="pay" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Alibaba-Cloud-Gateway" options="-parameters" />
-      <module name="Alibaba-Cloud-Gateway-Api" options="-parameters" />
+      <module name="Alibaba-Cloud-Common" options="-parameters" />
+      <module name="Alibaba-Cloud-Mapper" options="-parameters" />
       <module name="Alibaba-Cloud-Member" options="-parameters" />
-      <module name="Alibaba-Cloud-Member-Hxx" options="-parameters" />
+      <module name="Alibaba-Cloud-Order" options="-parameters" />
+      <module name="Alibaba-Cloud-Pay" options="-parameters" />
       <module name="Alibaba-Cloud-Provder" options="-parameters" />
       <module name="Alibaba-Gateway-Api" options="-parameters" />
-      <module name="Alibaba-Zipkin-Server" options="-parameters" />
-      <module name="Alibaba-cloud-skywalking" options="-parameters" />
-      <module name="AlibabaCloudGateway" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="pay" options="-parameters" />
     </option>
   </component>
 </project>

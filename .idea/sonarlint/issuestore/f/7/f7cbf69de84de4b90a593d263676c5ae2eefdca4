@@ -1,0 +1,8 @@
+
+Q	java:S125	"<This block of commented-out lines of code should be removed.(ƒ¡Õ”
+‡
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙØ¤Şıÿÿÿÿ
+H
+java:S1481"-Remove this unused "template" local variable.(ßÀ‹ûÿÿÿÿ
+W
+java:S1854"<Remove this useless assignment to local variable "template".(ßÀ‹ûÿÿÿÿ

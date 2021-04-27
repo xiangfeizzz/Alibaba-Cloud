@@ -1,0 +1,28 @@
+
+y	java:S116"XRename this field "VmTemplateDao" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãšÙ¿ûÿÿÿÿ8îÚ¤’‘/
+ƒ
+java:S1488&"hImmediately return this expression instead of assigning it to the temporary variable "VmTemplateEntity".(Ş¬ÑÑûÿÿÿÿ
+T
+java:S3752">Add a "method" parameter to this "@RequestMapping" annotation.(Ûöí°
+X	java:S125"<This block of commented-out lines of code should be removed.(‰´Úº8îî‚¶/
+T
+java:S3752=">Add a "method" parameter to this "@RequestMapping" annotation.(Ä·è‡
+r
+java:S1488-"\Immediately return this expression instead of assigning it to the temporary variable "list".( ¸ÂÙ
+Y
+java:S37521">Add a "method" parameter to this "@RequestMapping" annotation.(À‡¦øÿÿÿÿ
+C
+java:S1481,"(Remove this unused "lqw" local variable.(èÚøÈÿÿÿÿÿ
+Q	java:S125%"<This block of commented-out lines of code should be removed.(‰´Úº
+`
+java:S37527">Add a "method" parameter to this "@RequestMapping" annotation.(åÉ¿Øøÿÿÿÿ8¶úú‘/
+R
+java:S1854,"7Remove this useless assignment to local variable "lqw".(èÚøÈÿÿÿÿÿ
+~	java:S116"]Rename this field "IVmTemplateService" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚­Èğùÿÿÿÿ8îÚ¤’‘/
+T
+java:S3752*">Add a "method" parameter to this "@RequestMapping" annotation.(ôã†Ù
+v
+java:S14889"YImmediately return this expression instead of assigning it to the temporary variable "i".(ı¨ÂÜ8·şü‘/
+r	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş¬ÑÑûÿÿÿÿ8ĞÍ›’‘/
+Y
+java:S3752#">Add a "method" parameter to this "@RequestMapping" annotation.(¼Û‰ñüÿÿÿÿ

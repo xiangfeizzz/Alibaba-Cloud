@@ -1,0 +1,9 @@
+
+H
+java:S1481k"&Remove this unused "i" local variable.(å·£Òþÿÿÿÿ8’ü‡Ž‘/
+\
+java:S3252<"FUse static access with "com.alibaba.fastjson.JSON" for "toJSONString".(ˆËŸ”
+{
+java:S1488*"^Immediately return this expression instead of assigning it to the temporary variable "entity".(³­ð°8À˜ø‘/
+W
+java:S1854k"5Remove this useless assignment to local variable "i".(å·£Òþÿÿÿÿ8’ü‡Ž‘/

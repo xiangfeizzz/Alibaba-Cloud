@@ -1,0 +1,27 @@
+
+K
+java:S18543"5Remove this useless assignment to local variable "a".(—¾È‡
+S
+java:S3752!">Add a "method" parameter to this "@RequestMapping" annotation.(¡Ã‚
+Y
+java:S37528">Add a "method" parameter to this "@RequestMapping" annotation.(ëèĞ§üÿÿÿÿ
+Q
+java:S1481/"/Remove this unused "createTime" local variable.(³îéúÿÿÿÿ8¢†ê¼/
+<
+java:S14813"&Remove this unused "a" local variable.(—¾È‡
+X
+java:S18544"=Remove this useless assignment to local variable "payResult".(Ëéí‚ùÿÿÿÿ
+Y
+java:S3752+">Add a "method" parameter to this "@RequestMapping" annotation.(ò¬âÖÿÿÿÿÿ
+Y
+java:S35183"CMake sure this expression can't be zero before doing this division.(—¾È‡
+`
+java:S1854/">Remove this useless assignment to local variable "createTime".(³îéúÿÿÿÿ8¢†ê¼/
+Q
+java:S1481$"/Remove this unused "createTime" local variable.(³îéúÿÿÿÿ8ëœè¼/
+e
+java:S1192("HDefine a constant instead of duplicating this literal "success" 3 times.(ùØ8µ¥ğ¼/
+`
+java:S1854$">Remove this useless assignment to local variable "createTime".(³îéúÿÿÿÿ8ëœè¼/
+I
+java:S14814".Remove this unused "payResult" local variable.(Ëéí‚ùÿÿÿÿ

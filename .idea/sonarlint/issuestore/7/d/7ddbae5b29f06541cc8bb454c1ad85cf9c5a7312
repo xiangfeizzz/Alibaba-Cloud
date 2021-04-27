@@ -1,0 +1,21 @@
+
+Z
+java:S3752@">Add a "method" parameter to this "@RequestMapping" annotation.(×ãõ8ÒıÁ/
+D
+java:S1481•"&Remove this unused "i" local variable.(éíş8¦·‘/
+‚
+java:S1488œ"kImmediately return this expression instead of assigning it to the temporary variable "serviceInstanceList".(Û¬«Ş
+Y
+java:S3752)">Add a "method" parameter to this "@RequestMapping" annotation.(¨Ò„íşÿÿÿÿ
+T
+java:S37522">Add a "method" parameter to this "@RequestMapping" annotation.(ÚüÅÙ
+i
+java:S1858C"L"isNewBusi" is already a string, there's no need to call "toString()" on it.(ÑÊûÆ8æ«ıÁ/
+S
+java:S1854•"5Remove this useless assignment to local variable "i".(éíş8¦·‘/
+S
+java:S1117•"5Rename "i" which hides the field declared at line 40.(éíş8˜Ë€‘/
+y
+java:S1488W"^Immediately return this expression instead of assigning it to the temporary variable "entity".(¶Õæ£ıÿÿÿÿ
+\
+java:S3252h"FUse static access with "com.alibaba.fastjson.JSON" for "toJSONString".(ˆËŸ”

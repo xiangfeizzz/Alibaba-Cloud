@@ -1,9 +1,9 @@
 package com.hxx.alibaba.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.hxx.alibaba.repository.dao.DataReceiveRecordDao;
-import com.hxx.alibaba.repository.entity.DataReceiveRecordEntity;
-import com.hxx.alibaba.repository.service.IDataReceiveRecordService;
+import com.hxx.alibaba.repository.dao.VmTemplateDao;
+import com.hxx.alibaba.repository.entity.VmTemplateEntity;
+import com.hxx.alibaba.repository.service.IVmTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,45 +21,50 @@ public class ProvderController {
     private Registration registration;
 
     @Autowired
-    private DataReceiveRecordDao DataReceiveRecordDao;
+    private VmTemplateDao VmTemplateDao;
 
     @Autowired
-    private IDataReceiveRecordService IDataReceiveRecordService;
+    private IVmTemplateService IVmTemplateService;
 
     @RequestMapping("/getIpAndPort")
     public String getIpAndPort() {
-//        try{Thread.sleep(3000);}catch(Exception e){e.printStackTrace();}
+        try{Thread.sleep(4000);}catch(Exception e){e.printStackTrace();}
         return registration.getHost() + ":" + registration.getPort();
     }
 
     @RequestMapping("/selectById")
-    public DataReceiveRecordEntity selectById(String id) {
-//        try{Thread.sleep(3000);}catch(Exception e){e.printStackTrace();}
-        DataReceiveRecordEntity dataReceiveRecordEntity = DataReceiveRecordDao.selectById(id);
-        return dataReceiveRecordEntity;
+    public VmTemplateEntity selectById(String id) {
+        VmTemplateEntity VmTemplateEntity = VmTemplateDao.selectById(id);
+        return VmTemplateEntity;
     }
 
     @RequestMapping("/queryList")
-    public List<DataReceiveRecordEntity> query() {
-        LambdaQueryWrapper<DataReceiveRecordEntity> lqw = new LambdaQueryWrapper<>();
-        List<DataReceiveRecordEntity> list = IDataReceiveRecordService.list();
+    public List<VmTemplateEntity> query() {
+        LambdaQueryWrapper<VmTemplateEntity> lqw = new LambdaQueryWrapper<>();
+        List<VmTemplateEntity> list = IVmTemplateService.list();
         return list;
     }
 
     @RequestMapping("/insert")
-    public DataReceiveRecordEntity insert(@RequestBody DataReceiveRecordEntity entity) {
-        DataReceiveRecordDao.insert(entity);
+    public VmTemplateEntity insert(@RequestBody VmTemplateEntity entity) {
+        VmTemplateDao.insert(entity);
         return entity;
     }
 
+    @RequestMapping("/deleteById")
+    public int deleteById(String id) {
+        int i=VmTemplateDao.deleteById(id);
+        return i;
+    }
+
     @RequestMapping("/update")
-    public DataReceiveRecordEntity update(@RequestBody Map<String, String> map) {
+    public VmTemplateEntity update(@RequestBody Map<String, String> map) {
         String id = map.get("id");
-        String remark = map.get("remark");
-        DataReceiveRecordEntity entity = DataReceiveRecordDao.selectById(id);
+        String template = map.get("template");
+        VmTemplateEntity entity = VmTemplateDao.selectById(id);
         entity.setId(id);
-        entity.setDataRemark(remark);
-        DataReceiveRecordDao.updateById(entity);
+        entity.setTemplate(template);
+        VmTemplateDao.updateById(entity);
         return entity;
     }
 

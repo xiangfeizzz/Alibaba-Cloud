@@ -1,6 +1,6 @@
+com\hxx\alibaba\repository\dao\VmTemplateDao.class
 com\hxx\alibaba\ProvderApp.class
-com\hxx\alibaba\repository\entity\DataReceiveRecordEntity.class
-com\hxx\alibaba\repository\dao\DataReceiveRecordDao.class
+com\hxx\alibaba\repository\service\impl\VmTemplateServiceImpl.class
 com\hxx\alibaba\controller\ProvderController.class
-com\hxx\alibaba\repository\service\IDataReceiveRecordService.class
-com\hxx\alibaba\repository\service\impl\DataReceiveRecordServiceImpl.class
+com\hxx\alibaba\repository\service\IVmTemplateService.class
+com\hxx\alibaba\repository\entity\VmTemplateEntity.class

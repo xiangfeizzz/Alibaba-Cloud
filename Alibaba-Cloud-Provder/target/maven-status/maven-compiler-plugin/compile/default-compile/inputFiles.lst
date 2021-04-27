@@ -1,6 +1,6 @@
-D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\repository\service\IDataReceiveRecordService.java
-D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\repository\service\impl\DataReceiveRecordServiceImpl.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\repository\service\IVmTemplateService.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\repository\service\impl\VmTemplateServiceImpl.java
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\ProvderApp.java
-D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\repository\entity\DataReceiveRecordEntity.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\repository\dao\VmTemplateDao.java
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\controller\ProvderController.java
-D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\repository\dao\DataReceiveRecordDao.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Provder\src\main\java\com\hxx\alibaba\repository\entity\VmTemplateEntity.java

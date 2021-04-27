@@ -3,23 +3,19 @@ package com.hxx.alibaba.controller;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.fastjson.JSONObject;
 import com.hxx.alibaba.controller.fegin.MemberService;
-import com.hxx.alibaba.repository.entity.DataReceiveRecordEntity;
+import com.hxx.alibaba.repository.entity.VmTemplateEntity;
 import com.hxx.alibaba.service.ProviderService;
-import io.netty.handler.codec.json.JsonObjectDecoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import java.time.LocalDateTime;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -38,16 +34,16 @@ public class MemberController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-
-
     @Value("${isNewBusi}")
-    private Boolean isNewBusi;
+    private String isNewBusi;
 
     int i=0;
     @RequestMapping("/index")
     public String index() {
         i++;
-        if(i%2==0)  return "error";
+        if(i%2==0) {
+            return "error";
+        }
         return "index";
     }
 
@@ -77,7 +73,8 @@ public class MemberController {
      */
     @GetMapping("/getIpAndPort")
     public String getIpAndPort() {
-        return this.restTemplate.getForObject("http://alibaba-cloud-provder/provder/getIpAndPort", String.class);
+        String ipAndPort= memberService.getIpAndPort();
+        return ipAndPort;
     }
 
 
@@ -87,8 +84,8 @@ public class MemberController {
      * @return
      */
     @GetMapping("/selectById")
-    public DataReceiveRecordEntity selectById(String id) {
-        DataReceiveRecordEntity entity = memberService.selectById(id);
+    public VmTemplateEntity selectById(String id) {
+        VmTemplateEntity entity = memberService.selectById(id);
         return entity;
     }
 
@@ -99,14 +96,10 @@ public class MemberController {
      */
     @GetMapping("/queryList")
     public String  queryList() {
-//        ribbon调用
-//        DataReceiveRecordEntity[] entityArray=restTemplate.getForObject("http://alibaba-cloud-provder/provder/queryList", DataReceiveRecordEntity[].class);
-//        List<DataReceiveRecordEntity> entityList= Arrays.asList(entityArray);
-
         //feign调用
-        List<DataReceiveRecordEntity> entityList=memberService.queryList();
+        List<VmTemplateEntity> entityList=memberService.queryList();
 
-        for(DataReceiveRecordEntity e:entityList){
+        for(VmTemplateEntity e:entityList){
             System.out.println("id->"+e.getId());
         }
         return JSONObject.toJSONString(entityList) ;
@@ -119,16 +112,13 @@ public class MemberController {
      * @return
      */
     @GetMapping("/update")
-    public DataReceiveRecordEntity update(String id, String remark) {
-        DataReceiveRecordEntity entity = new DataReceiveRecordEntity();
+    public VmTemplateEntity update(String id, String template) {
+        VmTemplateEntity entity = new VmTemplateEntity();
         entity.setId(id);
-        entity.setDataRemark(remark);
+        entity.setTemplate(template);
         HashMap<String,String> map=new HashMap<>();
         map.put("id",id);
-        map.put("remark",remark);
-        //ribbon调用
-//        ResponseEntity<DataReceiveRecordEntity> entityReturn = restTemplate.postForEntity("http://alibaba-cloud-provder/provder/update", entity, DataReceiveRecordEntity.class);
-//        return entityReturn.getBody();
+        map.put("template",template);
 
         //feign调用
         entity= memberService.update(map);
@@ -141,21 +131,24 @@ public class MemberController {
      * @return
      */
     @GetMapping("/insert")
-    public DataReceiveRecordEntity insert() {
-        DataReceiveRecordEntity entity = new DataReceiveRecordEntity();
-        entity.setDataType("1");
-        entity.setDataRemark("测试");
-        entity.setTotalNum("1");
-        entity.setSuccNum("1");
-        entity.setCreateTime(LocalDateTime.now().toString());
-
-        //ribbon调用
-//        ResponseEntity<DataReceiveRecordEntity> entityReturn = restTemplate.postForEntity("http://alibaba-cloud-provder/provder/insert", entity, DataReceiveRecordEntity.class);
-//        return entityReturn.getBody();
+    public VmTemplateEntity insert() {
+        VmTemplateEntity entity = new VmTemplateEntity();
+        entity.setTemplate("测试");
 
         //feign调用
         entity= memberService.insert(entity);
         return entity;
+    }
+
+    /**
+     * 根据id删除
+     *
+     * @return
+     */
+    @GetMapping("/deleteById")
+    public String deleteById(String id) {
+        int i = memberService.deleteById(id);
+        return "删除成功";
     }
 
 

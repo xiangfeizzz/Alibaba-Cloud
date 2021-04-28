@@ -32,22 +32,14 @@ public class OrderController {
 
     @RequestMapping("/save")
     public String save(){
-        String id=UUID.randomUUID().toString().replace("-","").substring(10);
-        LocalDateTime createTime = LocalDateTime.now();
-        String inserSql="insert into DATA_RECEIVE_RECORD(id,data_type,data_remark,total_num,succ_num) values ('"+id+"','1','seate测试','1','1')";
-        System.out.println("inserSql-->"+inserSql);
-        this.jdbcTemplate.update(inserSql);
+        this.jdbcTemplate.update("insert into account(balance) values ('100')");
         return "success";
     }
 
     @RequestMapping("/save2")
     @GlobalTransactional
     public String save2() {
-        String id=UUID.randomUUID().toString().replace("-","").substring(10);
-        LocalDateTime createTime = LocalDateTime.now();
-        String inserSql="insert into DATA_RECEIVE_RECORD(id,data_type,data_remark,total_num,succ_num) values ('"+id+"','1','seate测试','1','1')";
-        System.out.println("inserSql-->"+inserSql);
-        this.jdbcTemplate.update(inserSql);
+        this.jdbcTemplate.update("insert into account(balance) values ('200')");
         int a=2/0;
         String payResult=restTemplate.getForObject("http://pay/pay/save",  String.class);
         return "success";

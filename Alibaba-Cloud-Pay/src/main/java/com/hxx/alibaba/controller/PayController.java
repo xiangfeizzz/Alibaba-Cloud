@@ -18,7 +18,7 @@ public class PayController {
 
     @RequestMapping("/save")
     public String save(){
-        this.jdbcTemplate.update("insert into account(balance) values ('200')");
+        this.jdbcTemplate.update("insert into account(balance) values ('300')");
         return "success";
     }
 

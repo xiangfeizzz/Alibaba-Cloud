@@ -67,6 +67,13 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.3</version>
+        </dependency>
+
+
         <!--seata-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -84,11 +91,6 @@
             <version>${seata.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc6</artifactId>
-            <version>11.2.0.3</version>
-        </dependency>
 
         <dependency>
             <groupId>org.apache.rocketmq</groupId>

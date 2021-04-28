@@ -52,6 +52,32 @@ public class MemberController {
         return "list";
     }
 
+
+    /**
+     * 测试sentinel链路规则
+     * @return
+     */
+    @GetMapping("/link")
+    public String link() {
+        return providerService.link();
+    }
+
+    /**
+     * 测试sentinel链路规则
+     * @return
+     */
+    @GetMapping("/link2")
+    public String link2() {
+        return providerService.link();
+    }
+
+
+    /**
+     * 测试sentinel热点规则
+     * @param num1
+     * @param num2
+     * @return
+     */
     @GetMapping("/hot")
     @SentinelResource("hot")
     public String hot(@RequestParam(value = "num1",required = false) Integer num1, @RequestParam(value = "num2",required = false) Integer num2) {

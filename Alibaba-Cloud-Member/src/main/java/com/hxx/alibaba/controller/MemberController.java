@@ -49,6 +49,7 @@ public class MemberController {
 
     @RequestMapping("/list")
     public String list() {
+//        try{Thread.sleep(100);}catch(Exception e){e.printStackTrace();}
         return "list";
     }
 

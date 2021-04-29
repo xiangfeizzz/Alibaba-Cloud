@@ -42,14 +42,14 @@ public class MemberController {
     public String index() {
         i++;
         if(i%2==0) {
-            return "error";
+            throw new RuntimeException();
         }
         return "index";
     }
 
     @RequestMapping("/list")
     public String list() {
-//        try{Thread.sleep(100);}catch(Exception e){e.printStackTrace();}
+        try{Thread.sleep(100);}catch(Exception e){e.printStackTrace();}
         return "list";
     }
 

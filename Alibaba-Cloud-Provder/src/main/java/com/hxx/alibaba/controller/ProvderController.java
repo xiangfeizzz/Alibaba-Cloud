@@ -28,7 +28,7 @@ public class ProvderController {
 
     @RequestMapping("/getIpAndPort")
     public String getIpAndPort() {
-//        try{Thread.sleep(4000);}catch(Exception e){e.printStackTrace();}
+        try{Thread.sleep(4000);}catch(Exception e){e.printStackTrace();}
         return registration.getHost() + ":" + registration.getPort();
     }
 

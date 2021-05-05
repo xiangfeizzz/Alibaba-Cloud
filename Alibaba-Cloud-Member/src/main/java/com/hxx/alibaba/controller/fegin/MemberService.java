@@ -18,6 +18,9 @@ public interface MemberService {
     @RequestMapping("/provder/getIpAndPort")
     String getIpAndPort();
 
+    @RequestMapping("/provder/getIpAndPort2")
+    String getIpAndPort2();
+
     @RequestMapping("/provder/selectById")
     VmTemplateEntity selectById(@RequestParam("id") String id);
 

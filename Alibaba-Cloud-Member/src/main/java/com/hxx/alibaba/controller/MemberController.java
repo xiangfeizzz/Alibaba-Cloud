@@ -108,6 +108,17 @@ public class MemberController {
         return ipAndPort;
     }
 
+    /**
+     * getIpAndPort
+     * @return
+     */
+    @GetMapping("/getIpAndPort2")
+    public String getIpAndPort2() {
+        String ipAndPort= memberService.getIpAndPort2();
+        return ipAndPort;
+    }
+
+
 
     /**
      * 根据id查询

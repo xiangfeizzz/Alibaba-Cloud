@@ -20,6 +20,13 @@ public class SentinelExceptionHandler implements MemberService {
         return "feign获取getIpAndPort 异常";
     }
 
+
+    @Override
+    public String getIpAndPort2() {
+        System.out.println("feign获取getIpAndPort2 异常");
+        return "feign获取getIpAndPort2 异常";
+    }
+
     @Override
     public VmTemplateEntity selectById(String name) {
         System.out.println("sentinel 熔断处理 selectById");

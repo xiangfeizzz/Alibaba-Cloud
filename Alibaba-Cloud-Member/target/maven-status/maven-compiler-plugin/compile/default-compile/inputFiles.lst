@@ -3,8 +3,8 @@ D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\sr
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\MemberApp.java
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\config\SentinelConfiguration.java
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\service\ProviderService.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\controller\MemberRibbonController.java
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\repository\entity\VmTemplateEntity.java
-D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\controller\MemberController2.java
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\config\RequestOriginParserDefinition.java
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\config\WebConfig.java
 D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\controller\fegin\MemberService.java

@@ -49,10 +49,14 @@ public class MemberController {
 
     @RequestMapping("/list")
     public String list() {
-        try{Thread.sleep(100);}catch(Exception e){e.printStackTrace();}
         return "list";
     }
 
+    @RequestMapping("/list2")
+    public String list2() {
+        try{Thread.sleep(100);}catch(Exception e){e.printStackTrace();}
+        return "list";
+    }
 
     /**
      * 测试sentinel链路规则

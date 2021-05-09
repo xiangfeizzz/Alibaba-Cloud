@@ -5,94 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea984dd7-f311-4b9d-995d-24deeddd9978" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/controller/MemberController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/repository/entity/VmTemplateEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/repository/dao/VmTemplateDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/repository/entity/VmTemplateEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/repository/service/IVmTemplateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/repository/service/impl/VmTemplateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/java/com/hxx/alibaba/config/GatewayCorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/java/com/hxx/alibaba/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/java/com/hxx/alibaba/config/TokenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/java/com/hxx/alibaba/filter/GatewayFilterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/java/com/hxx/alibaba/utils/EncryptUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Oauth/src/main/java/com/hxx/alibaba/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Alibaba-Cloud-Oauth/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/controller/fegin/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/controller/fegin/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/controller/fegin/SentinelExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/controller/fegin/SentinelExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/repository/entity/DataReceiveRecordEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java/com/hxx/alibaba/test/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/Alibaba-Cloud-Member-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/Alibaba-Cloud-Member-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/controller/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/controller/fegin/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/controller/fegin/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/controller/fegin/SentinelExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/controller/fegin/SentinelExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/repository/entity/DataReceiveRecordEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/rocketMq/Customer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/rocketMq/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/rocketMq/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/classes/com/hxx/alibaba/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Order/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java/com/hxx/alibaba/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java/com/hxx/alibaba/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java/com/hxx/alibaba/repository/dao/DataReceiveRecordDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java/com/hxx/alibaba/repository/entity/DataReceiveRecordEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java/com/hxx/alibaba/repository/service/IDataReceiveRecordService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java/com/hxx/alibaba/repository/service/impl/DataReceiveRecordServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/Alibaba-Cloud-Order-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/classes/com/hxx/alibaba/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/classes/com/hxx/alibaba/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/classes/com/hxx/alibaba/repository/dao/DataReceiveRecordDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/classes/com/hxx/alibaba/repository/entity/DataReceiveRecordEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/classes/com/hxx/alibaba/repository/service/IDataReceiveRecordService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/classes/com/hxx/alibaba/repository/service/impl/DataReceiveRecordServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java/com/hxx/alibaba/controller/PayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java/com/hxx/alibaba/controller/PayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java/com/hxx/alibaba/controller/rocketMq/RocketMqService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java/com/hxx/alibaba/controller/rocketMq/RocketMqService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java/com/hxx/alibaba/repository/dao/DataReceiveRecordDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java/com/hxx/alibaba/repository/entity/DataReceiveRecordEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java/com/hxx/alibaba/repository/service/IDataReceiveRecordService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java/com/hxx/alibaba/repository/service/impl/DataReceiveRecordServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/Alibaba-Cloud-Pay-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/com/hxx/alibaba/controller/PayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/com/hxx/alibaba/controller/PayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/com/hxx/alibaba/controller/rocketMq/RocketMqService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/com/hxx/alibaba/repository/dao/DataReceiveRecordDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/com/hxx/alibaba/repository/entity/DataReceiveRecordEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/com/hxx/alibaba/repository/service/IDataReceiveRecordService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/classes/com/hxx/alibaba/repository/service/impl/DataReceiveRecordServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/controller/ProvderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/controller/ProvderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/repository/dao/DataReceiveRecordDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/repository/entity/DataReceiveRecordEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/repository/service/IDataReceiveRecordService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/repository/service/impl/DataReceiveRecordServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/Alibaba-Cloud-Order-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Order/target/Alibaba-Cloud-Order-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/Alibaba-Cloud-Pay-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Pay/target/Alibaba-Cloud-Pay-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/Alibaba-Cloud-Provder-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/Alibaba-Cloud-Provder-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/classes/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/classes/com/hxx/alibaba/controller/ProvderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/classes/com/hxx/alibaba/controller/ProvderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/classes/com/hxx/alibaba/repository/dao/DataReceiveRecordDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/classes/com/hxx/alibaba/repository/entity/DataReceiveRecordEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/classes/com/hxx/alibaba/repository/service/IDataReceiveRecordService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/classes/com/hxx/alibaba/repository/service/impl/DataReceiveRecordServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Provder/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/src/main/java/alibaba/GatewayApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/java/com/hxx/alibaba/GatewayApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/src/main/java/alibaba/fielt/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/Alibaba-Gateway-Api-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/classes/alibaba/GatewayApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/classes/alibaba/fielt/AuthFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/target/classes/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Alibaba-Cloud-Gateway/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Alibaba-Gateway-Order/Alibaba-Gateway-Order.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/agent/logs/skywalking-api.log" beforeDir="false" afterPath="$PROJECT_DIR$/agent/logs/skywalking-api.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +104,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -165,7 +111,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tulingvip-cloud-alibaba" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Alibaba-Cloud-Oauth/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -184,22 +130,22 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\resources" />
+      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Gateway-Api\src\main\java\com\hxx\alibaba" />
+      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Gateway-Api\src\main\java\alibaba" />
+      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Gateway-Api\src\main\java\alibaba\repository\entity" />
+      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Gateway-Api\src\main\java\alibaba\repository" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.hxx.alibaba.repository.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hxx.alibaba.repository.entity" />
-      <recent name="com.hxx.alibaba.controller" />
-      <recent name="com.hxx.alibaba.rocketMq" />
+      <recent name="com.hxx.alibaba.entity" />
+      <recent name="com.hxx.alibaba.utils" />
+      <recent name="com.hxx.alibaba.filter" />
       <recent name="com.hxx.alibaba.config" />
-      <recent name="com.hxx.alibaba.repository.dao" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Order\src\main\resources" />
-      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Order\src\main\java\com\hxx\alibaba" />
-      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Pay\src\main\resources" />
-      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba" />
-      <recent name="D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Member\src\main\java\com\hxx\alibaba\config" />
+      <recent name="alibaba.repository.dao" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -216,42 +162,41 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MemberApp">
-    <configuration name="ConfigTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hxx.alibaba.test.ConfigTest" />
-      <module name="Alibaba-Cloud-Member" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hxx.alibaba.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Spring Boot.GatewayApp (1)">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Customer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hxx.alibaba.rocketMqTest.Customer" />
-      <module name="Alibaba-Cloud-Order" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hxx.alibaba.rocketMqTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hxx.alibaba.OrderApp" />
-      <module name="Alibaba-Cloud-Order" />
+    <configuration name="GatewayApp (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Alibaba-Cloud-Gateway" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hxx.alibaba.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxx.alibaba.GatewayApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Alibaba-Gateway-Api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alibaba.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxx.alibaba.GatewayApp" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -271,7 +216,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="OauthApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="Alibaba-Cloud-Oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hxx.alibaba.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxx.alibaba.OauthApp" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="Alibaba-Cloud-Order" />
       <extension name="coverage">
         <pattern>
@@ -280,6 +239,7 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hxx.alibaba.OrderApp" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -314,21 +274,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Customer (1)" />
-      <item itemvalue="Application.ConfigTest" />
-      <item itemvalue="Application.OrderApp" />
       <item itemvalue="Spring Boot.PayApp" />
+      <item itemvalue="Spring Boot.OrderApp" />
       <item itemvalue="Spring Boot.MemberApp" />
       <item itemvalue="Spring Boot.ProvderApp" />
-      <item itemvalue="Spring Boot.OrderApp" />
+      <item itemvalue="Spring Boot.GatewayApp" />
+      <item itemvalue="Spring Boot.OauthApp" />
+      <item itemvalue="Spring Boot.GatewayApp (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayApp (1)" />
+        <item itemvalue="Spring Boot.OauthApp" />
         <item itemvalue="Spring Boot.ProvderApp" />
-        <item itemvalue="Spring Boot.OrderApp" />
-        <item itemvalue="Application.OrderApp" />
-        <item itemvalue="Application.ConfigTest" />
-        <item itemvalue="Application.Customer (1)" />
+        <item itemvalue="Spring Boot.GatewayApp" />
+        <item itemvalue="Spring Boot.OauthApp" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +337,14 @@
       <workItem from="1619322430713" duration="7858000" />
       <workItem from="1619397021541" duration="4871000" />
       <workItem from="1619498512659" duration="9265000" />
-      <workItem from="1619521981995" duration="4324000" />
+      <workItem from="1619521981995" duration="8366000" />
+      <workItem from="1619570349593" duration="19628000" />
+      <workItem from="1619609564354" duration="8633000" />
+      <workItem from="1619666350667" duration="3732000" />
+      <workItem from="1619692412744" duration="7793000" />
+      <workItem from="1620091180422" duration="27948000" />
+      <workItem from="1620387906329" duration="2352000" />
+      <workItem from="1620471147127" duration="24851000" />
     </task>
     <servers />
   </component>
@@ -409,18 +376,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java/com/hxx/alibaba/controller/OrderController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="16" />
+          <line>41</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java/com/hxx/alibaba/controller/OrderController.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java/com/hxx/alibaba/controller/ProvderController.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="22" />
+          <line>42</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

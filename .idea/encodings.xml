@@ -2,16 +2,17 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Member" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Member/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Oauth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Pay/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Provder" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Alibaba-Cloud-Provder/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Alibaba-Gateway-Api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Alibaba-Gateway-Api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Alibaba-Gateway-Api/src/main/resources" charset="UTF-8" />
   </component>
 </project>

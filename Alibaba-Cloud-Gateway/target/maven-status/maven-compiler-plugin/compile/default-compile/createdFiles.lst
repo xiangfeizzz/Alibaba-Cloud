@@ -1,0 +1,6 @@
+com\hxx\alibaba\config\GatewayCorsConfiguration.class
+com\hxx\alibaba\config\TokenConfig.class
+com\hxx\alibaba\utils\EncryptUtil.class
+com\hxx\alibaba\config\SecurityConfig.class
+com\hxx\alibaba\filter\GatewayFilterConfig.class
+com\hxx\alibaba\GatewayApp.class

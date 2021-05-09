@@ -1,0 +1,17 @@
+com\hxx\alibaba\OauthApp.class
+com\hxx\alibaba\entity\PermissionEntry.class
+com\hxx\alibaba\mapper\UserMapper.class
+com\hxx\alibaba\security\handler\LogoutHandler.class
+com\hxx\alibaba\security\service\SecurityUserDetailService.class
+com\hxx\alibaba\entity\UserEntity.class
+com\hxx\alibaba\security\exception\CustomOauthExceptionSerializer.class
+com\hxx\alibaba\security\handler\FailureHandler.class
+com\hxx\alibaba\service\PermissionService.class
+com\hxx\alibaba\security\handler\SuccessHandler.class
+com\hxx\alibaba\service\UserService.class
+com\hxx\alibaba\mapper\PermissionMapper.class
+com\hxx\alibaba\security\config\AuthorizationServer.class
+com\hxx\alibaba\security\config\WebSecurityConfig.class
+com\hxx\alibaba\security\config\TokenConfig.class
+com\hxx\alibaba\security\exception\WebResponseTranslator.class
+com\hxx\alibaba\security\exception\CustomOauthException.class

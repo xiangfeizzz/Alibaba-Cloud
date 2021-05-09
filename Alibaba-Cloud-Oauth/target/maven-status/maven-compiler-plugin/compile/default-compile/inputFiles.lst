@@ -1,0 +1,17 @@
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\mapper\UserMapper.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\exception\CustomOauthException.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\config\TokenConfig.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\handler\SuccessHandler.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\handler\LogoutHandler.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\config\WebSecurityConfig.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\exception\CustomOauthExceptionSerializer.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\service\PermissionService.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\OauthApp.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\exception\WebResponseTranslator.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\entity\PermissionEntry.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\mapper\PermissionMapper.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\service\UserService.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\service\SecurityUserDetailService.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\entity\UserEntity.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\config\AuthorizationServer.java
+D:\huiyun\workspace_git\demo-cloud-alibaba\Alibaba-Cloud\Alibaba-Cloud-Oauth\src\main\java\com\hxx\alibaba\security\handler\FailureHandler.java

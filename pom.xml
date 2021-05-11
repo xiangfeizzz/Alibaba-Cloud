@@ -11,8 +11,6 @@
         <module>Alibaba-Cloud-Gateway</module>
         <module>Alibaba-Cloud-Member</module>
         <module>Alibaba-Cloud-Provder</module>
-        <module>Alibaba-Cloud-Order</module>
-        <module>Alibaba-Cloud-Pay</module>
         <module>Alibaba-Cloud-Oauth</module>
     </modules>
 
@@ -47,20 +45,6 @@
 </dependencyManagement>
 
 <dependencies>
-
-
-    <!--引入配置中心阿里巴巴-->
-    <dependency>
-        <groupId>com.alibaba.cloud</groupId>
-        <artifactId>spring-cloud-alibaba-nacos-config</artifactId>
-    </dependency>
-
-    <!--引入注册中心阿里巴巴-->
-    <dependency>
-        <groupId>com.alibaba.cloud</groupId>
-        <artifactId>spring-cloud-alibaba-nacos-discovery</artifactId>
-    </dependency>
-
 
     <dependency>
         <groupId>org.projectlombok</groupId>

@@ -32,21 +32,16 @@ import java.util.Set;
 @Slf4j
 public class GatewayFilterConfig implements GlobalFilter, Ordered, InitializingBean {
 
-
     @Autowired
     private TokenStore tokenStore;
 
-    /**
-     * 请求各个微服务 不需要用户认证的URL
-     */
     private static Set<String> shouldSkipUrl = new LinkedHashSet<>();
-
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String requestUrl = exchange.getRequest().getPath().value();
         //无需拦截直接放行
-        if(shouldSkipUrl.contains(requestUrl)) {
+        if (shouldSkipUrl.contains(requestUrl)) {
             return chain.filter(exchange);
         }
 
@@ -69,12 +64,12 @@ public class GatewayFilterConfig implements GlobalFilter, Ordered, InitializingB
             String principal = MapUtils.getString(additionalInformation, "user_name");
             //获取用户权限
             List<String> authorities = (List<String>) additionalInformation.get("authorities");
-            if(!authorities.contains(requestUrl)){
+            if (!authorities.contains(requestUrl)) {
                 return noPermission(exchange);
             }
-            JSONObject jsonObject=new JSONObject();
-            jsonObject.put("principal",principal);
-            jsonObject.put("authorities",authorities);
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("principal", principal);
+            jsonObject.put("authorities", authorities);
             //给header里面添加值
             String base64 = EncryptUtil.encodeUTF8StringBase64(jsonObject.toJSONString());
             ServerHttpRequest tokenRequest = exchange.getRequest().mutate().header("json-token", base64).build();
@@ -84,9 +79,6 @@ public class GatewayFilterConfig implements GlobalFilter, Ordered, InitializingB
             log.info("无效的token: {}", token);
             return invalidTokenMono(exchange);
         }
-
-
-
     }
 
 
@@ -149,7 +141,6 @@ public class GatewayFilterConfig implements GlobalFilter, Ordered, InitializingB
     public int getOrder() {
         return 0;
     }
-
 
     @Override
     public void afterPropertiesSet() throws Exception {

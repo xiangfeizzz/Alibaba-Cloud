@@ -5,6 +5,7 @@ import com.hxx.alibaba.utils.EncryptUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
@@ -22,21 +23,33 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
 import java.nio.charset.StandardCharsets;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 @Component
 @Slf4j
-public class GatewayFilterConfig implements GlobalFilter, Ordered {
+public class GatewayFilterConfig implements GlobalFilter, Ordered, InitializingBean {
 
 
     @Autowired
     private TokenStore tokenStore;
 
+    /**
+     * 请求各个微服务 不需要用户认证的URL
+     */
+    private static Set<String> shouldSkipUrl = new LinkedHashSet<>();
+
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String requestUrl = exchange.getRequest().getPath().value();
+        //无需拦截直接放行
+        if(shouldSkipUrl.contains(requestUrl)) {
+            return chain.filter(exchange);
+        }
+
         AntPathMatcher pathMatcher = new AntPathMatcher();
         //1 oauth服务所有放行
         if (pathMatcher.match("/oauth/**", requestUrl)) {
@@ -136,4 +149,13 @@ public class GatewayFilterConfig implements GlobalFilter, Ordered {
     public int getOrder() {
         return 0;
     }
+
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        shouldSkipUrl.add("/member/getIpAndPort");
+        shouldSkipUrl.add("/member/getIpAndPort2");
+        shouldSkipUrl.add("/member/getIpAndPort3");
+    }
+
 }

@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,6 +34,8 @@ public class MemberController {
     ProviderService providerService;
     @Autowired
     private DiscoveryClient discoveryClient;
+    @Autowired
+    private Registration registration;
 
     @Value("${isNewBusi}")
     private String isNewBusi;
@@ -98,26 +101,23 @@ public class MemberController {
         return isNewBusi.toString();
     }
 
-    /**
-     * getIpAndPort
-     * @return
-     */
+
     @GetMapping("/getIpAndPort")
     public String getIpAndPort() {
         String ipAndPort= memberService.getIpAndPort();
         return ipAndPort;
     }
 
-    /**
-     * getIpAndPort
-     * @return
-     */
     @GetMapping("/getIpAndPort2")
     public String getIpAndPort2() {
         String ipAndPort= memberService.getIpAndPort2();
         return ipAndPort;
     }
 
+    @RequestMapping("/getIpAndPort3")
+    public String getIpAndPort3() {
+        return registration.getHost() + ":" + registration.getPort();
+    }
 
 
     /**

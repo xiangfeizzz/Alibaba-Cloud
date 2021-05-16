@@ -32,26 +32,25 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private LogoutHandler logoutHandler;
 
+    //认证管理器
+    @Bean
+    public AuthenticationManager authenticationManagerBean() throws Exception {
+        return super.authenticationManagerBean();
+    }
+    //密码编码器
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-    @Bean
-    @Override
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean();
-    }
-
-
+    //安全拦截机制（最重要）
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().formLogin()
-                .loginProcessingUrl("/login").permitAll()
-                .successHandler(successHandler).permitAll()
-                .failureHandler(failureHandler).permitAll().and()
-                .logout().logoutSuccessHandler(logoutHandler).and()
+        http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/**").permitAll();
+                .antMatchers("/login*").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .formLogin();
     }
 }

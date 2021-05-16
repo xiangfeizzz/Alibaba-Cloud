@@ -28,42 +28,18 @@ public class TokenConfig {
      */
     private static final String SIGNING_KEY = "alibaba-cloud-oauth";
 
-
     @Bean
     public TokenStore tokenStore() {
+        //JWT令牌存储方案
         return new JwtTokenStore(accessTokenConverter());
     }
 
     @Bean
     public JwtAccessTokenConverter accessTokenConverter() {
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
-        converter.setSigningKey(SIGNING_KEY);
+        converter.setSigningKey(SIGNING_KEY); //对称秘钥，资源服务器使用该秘钥来验证
         return converter;
     }
 
-    /**
-     * 配置令牌管理
-     */
-    @Bean
-    public AuthorizationServerTokenServices tokenService(ClientDetailsService clientDetailsService,TokenStore tokenStore
-            ,JwtAccessTokenConverter accessTokenConverter) {
-        DefaultTokenServices service = new DefaultTokenServices();
-        service.setClientDetailsService(clientDetailsService);
-        service.setSupportRefreshToken(true);
-        service.setTokenStore(tokenStore);
-        TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
-        tokenEnhancerChain.setTokenEnhancers(Collections.singletonList(accessTokenConverter));
-        service.setTokenEnhancer(tokenEnhancerChain);
-        return service;
-    }
-
-    /**
-     * 授权码存储方式
-     */
-
-    @Bean
-    public AuthorizationCodeServices authorizationCodeServices(DataSource dataSource) {
-        return new JdbcAuthorizationCodeServices(dataSource);
-    }
 
 }

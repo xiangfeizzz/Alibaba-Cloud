@@ -19,7 +19,7 @@ public class SecurityConfig {
     @Bean
     public SecurityWebFilterChain webFluxSecurityFilterChain(ServerHttpSecurity http) {
         return http.authorizeExchange()
-                .pathMatchers("/**").permitAll()
+                .pathMatchers("/login*").permitAll()
                 .anyExchange().authenticated()
                 .and().formLogin()
                 .and().csrf().disable().build();
